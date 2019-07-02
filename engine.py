@@ -13,11 +13,13 @@ def main():
 
     room_max_size = 10
     room_min_size = 6
-    max_rooms = 50
+    max_rooms = 1000
 
     colors = {
-        'dark_wall': libtcod.Color(0, 0, 100),
-        'dark_ground': libtcod.Color(50, 50, 150)
+        # Red
+        'dark_wall': libtcod.darkest_gray,
+        # Brown
+        'dark_ground': libtcod.orange * libtcod.darker_gray
     }
 
     player = Entity(int(screen_width / 2), int(screen_height / 2), '@', libtcod.white)
