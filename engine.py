@@ -16,7 +16,7 @@ def main():
     max_rooms = 1000
 
     colors = {
-        # Red
+        # Gray
         'dark_wall': libtcod.darkest_gray,
         # Brown
         'dark_ground': libtcod.orange * libtcod.darker_gray
